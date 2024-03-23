@@ -3,9 +3,9 @@
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
   --color-heading: #112c65;
-  --color-body: #132e67;
+  --color-body-font: #132e67;
   --color-body-darker: #5c5577;
-
+  --color-background: #f5f5f5;
   --color-border: #ccc;
   --border-radius: 3rem;
 }
@@ -19,7 +19,7 @@
 /* Typography */
 ::selection {
   background-color: var(--color-primary);
-  color: #fff;
+  color: var(--color-background);
 }
 
 html {
@@ -30,7 +30,7 @@ body {
   font-family: "Roboto", sans-serif;
   /* Dektop 2.2 font size */
   font-size: 1.4rem;
-  color: var(--color-body);
+  color: var(--color-body-font);
   line-height: 1.4;
 }
 
@@ -89,12 +89,52 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: var(--color-body);
-}
+/* a:visited {
+  color: var(--color-body-font);
+} */
 
 /* Lists */
 .list {
   list-style: disc;
   padding-left: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+  border: 0;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn .icons {
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    padding: 2rem 3rem;
+  }
+
+  .btn .icons {
+    margin-right: 1.5rem;
+  }
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.btn--secondary {
+  border: 2px solid var(--color-primary);
+}
+
+.btn--secondary:visited {
+  color: var(--color-primary);
 }
