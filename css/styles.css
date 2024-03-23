@@ -28,10 +28,10 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  /* Dektop 2.2 font size */
   font-size: 1.4rem;
   color: var(--color-body-font);
   line-height: 1.4;
+  font-weight: 400;
 }
 
 h1,
@@ -101,7 +101,7 @@ a {
 
 /* Buttons */
 .btn {
-  border: 0;
+  border: 2px solid;
   border-radius: var(--border-radius);
   cursor: pointer;
   display: inline-block;
@@ -128,13 +128,44 @@ a {
 
 .btn--primary {
   background-color: var(--color-primary);
+  border-color: var(--color-primary);
   color: var(--color-background);
 }
 
 .btn--secondary {
-  border: 2px solid var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .btn--secondary:visited {
   color: var(--color-primary);
+}
+
+/* Grids */
+.grid {
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Cards */
+.card {
+  width: 100%;
+  max-width: 520px;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 2rem 1rem #f3f3f3;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card--grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 40%;
+  }
 }
