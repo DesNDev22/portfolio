@@ -89,10 +89,6 @@ a {
   text-decoration: none;
 }
 
-/* a:visited {
-  color: var(--color-body-font);
-} */
-
 /* Lists */
 .list {
   list-style: disc;
@@ -140,6 +136,19 @@ a {
   color: var(--color-primary);
 }
 
+/* Icons */
+.icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: var(--color-primary);
+}
+
+@media screen and (min-width: 700px) {
+  .icon {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
 /* Grids */
 .grid {
   display: grid;
@@ -168,4 +177,31 @@ a {
   .card {
     width: 40%;
   }
+}
+
+/* Collapsibles */
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible__icon {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible--expanded .collapsible__icon {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
 }

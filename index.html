@@ -18,29 +18,20 @@
     ></script>
   </head>
   <body>
-    <article class="card">
-      <h2>Project showcased</h2>
-      <p>
-        Brief description of the project being showcased in this section. It
-        could span a little longer.
-      </p>
-      <div class="grid card--grid-cols-2">
-        <img src="images/uxsaCard.png" alt="Description" class="card__img" />
-        <ul class="list">
-          <li>Research</li>
-          <li>UX/UI Design</li>
-          <li>Content</li>
-          <li>Adobe XD</li>
-        </ul>
+    <section class="collapsible collapsible--expanded">
+      <div class="collapsible__header">
+        <h2>Collapsible Header</h2>
+        <svg class="icon collapsible__icon">
+          <use xlink:href="./images/sprite.svg#chevron"></use>
+        </svg>
       </div>
-      <div class="grid card--grid-cols-2">
-        <a href="#" class="btn btn--secondary"
-          ><i class="fa-brands fa-figma icons"></i>Prototype</a
-        >
-        <a href="#" class="btn btn--primary"
-          ><i class="fa-regular fa-file icons"></i>Case Study</a
-        >
+      <div class="collapsible__content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+          perspiciatis quasi ipsa quod earum nisi?
+        </p>
       </div>
-    </article>
+    </section>
+    <script src="./js/main.js"></script>
   </body>
 </html>
