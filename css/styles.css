@@ -195,6 +195,10 @@ a {
   justify-items: center;
 }
 
+.grid--cols2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /* Cards */
 .card {
   border-radius: var(--border-radius);
