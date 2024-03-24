@@ -27,11 +27,11 @@ html {
 }
 
 body {
+  color: var(--color-body-font);
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
-  color: var(--color-body-font);
-  line-height: 1.4;
   font-weight: 400;
+  line-height: 1.4;
 }
 
 h1,
@@ -60,6 +60,27 @@ h3 {
 }
 
 @media screen and (min-width: 700px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  h3 {
+    font-size: 2.1rem;
+    margin-bottom: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   body {
     font-size: 2.2rem;
   }
@@ -112,13 +133,23 @@ a {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 700px) {
+  .btn {
+    padding: 2rem 2rem;
+  }
+
+  .btn .icons {
+    margin-right: 1.5rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     padding: 2rem 3rem;
   }
 
   .btn .icons {
-    margin-right: 1.5rem;
+    margin-right: 2rem;
   }
 }
 
@@ -138,17 +169,25 @@ a {
 
 /* Icons */
 .icon {
-  width: 1.8rem;
-  height: 1.8rem;
   fill: var(--color-primary);
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 @media screen and (min-width: 700px) {
+  .icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .icon {
     width: 2.8rem;
     height: 2.8rem;
   }
 }
+
 /* Grids */
 .grid {
   display: grid;
@@ -158,11 +197,11 @@ a {
 
 /* Cards */
 .card {
-  width: 100%;
-  max-width: 520px;
-  padding: 1rem 2rem;
   border-radius: var(--border-radius);
   box-shadow: 0 0 2rem 1rem #f3f3f3;
+  max-width: 520px;
+  padding: 1rem 2rem;
+  width: 100%;
 }
 
 .card__img {
@@ -204,4 +243,58 @@ a {
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
+}
+
+/* Menu lists */
+/* TODO move .nav to general nav when putting navigations bar together */
+/* .nav {
+  display: flex;
+  height: 7rem;
+} */
+
+.nav__list {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-end;
+  list-style: none;
+  text-align: end;
+  width: 100%;
+}
+
+.nav__list-aRef {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav__list-item .icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.nav__list-item span {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .nav__list-item .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .nav__list-item span {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__list-item .icon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .nav__list-item span {
+    display: inline-block;
+  }
 }
