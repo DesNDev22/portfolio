@@ -18,34 +18,22 @@
     ></script>
   </head>
   <body>
-    <div class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="#" class="nav__list-aRef">
-            <svg class="icon">
-              <use xlink:href="./images/sprite.svg#home"></use>
-            </svg>
-            <span>Home</span>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#" class="nav__list-aRef">
-            <svg class="icon">
-              <use xlink:href="./images/sprite.svg#about"></use>
-            </svg>
-            <span>About Me</span>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#" class="nav__list-aRef">
-            <svg class="icon">
-              <use xlink:href="./images/sprite.svg#email"></use>
-            </svg>
-            <span>Contact Me</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <section class="collapsible collapsible--expanded">
+      <div class="collapsible__header">
+        <h2>Collapsible Header</h2>
+        <svg class="icon collapsible__icon">
+          <use xlink:href="./images/sprite.svg#chevron"></use>
+        </svg>
+        <!-- <i class="fa-solid fa-circle-down"></i> -->
+      </div>
+      <div class="collapsible__content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+          perspiciatis quasi ipsa quod earum nisi?
+        </p>
+      </div>
+    </section>
+
     <script src="./js/main.js"></script>
   </body>
 </html>
