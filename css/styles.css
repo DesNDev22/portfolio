@@ -4,10 +4,9 @@
   --color-accent: #ff3400;
   --color-heading: #112c65;
   --color-body-font: #132e67;
-  --color-body-darker: #5c5577;
   --color-background: #f5f5f5;
-  --color-border: #ccc;
-  --border-radius: 3rem;
+  --color-shadows: #ccc;
+  --border-radius: 2rem;
 }
 
 *,
@@ -27,6 +26,7 @@ html {
 }
 
 body {
+  background-color: var(--color-background);
   color: var(--color-body-font);
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
@@ -198,7 +198,7 @@ a {
 /* Cards */
 .card {
   border-radius: var(--border-radius);
-  box-shadow: 0 0 2rem 1rem #f3f3f3;
+  box-shadow: 0 0 2rem 1rem var(--color-shadows);
   max-width: 520px;
   padding: 1rem 2rem;
   width: 100%;
