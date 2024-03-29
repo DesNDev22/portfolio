@@ -263,7 +263,7 @@ a {
 .nav__list {
   align-items: center;
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
   justify-content: flex-end;
   list-style: none;
   text-align: end;
