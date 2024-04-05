@@ -117,21 +117,21 @@ ul {
 /* Icons */
 .icon {
   fill: var(--color-primary);
-  height: 1.8rem;
-  width: 1.8rem;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 
 @media screen and (min-width: 700px) {
   .icon {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 1.8rem;
+    height: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .icon {
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 2.2rem;
+    height: 2.2rem;
   }
 }
 
@@ -148,7 +148,6 @@ ul {
 
 .block--primary {
   background-color: #000022;
-  /* background-color: var(--color-primary); */
 }
 
 .block--primary .heading {
@@ -206,28 +205,25 @@ ul {
 
 /* Buttons */
 .btn {
+  align-items: center;
   border: 2px solid;
   border-radius: var(--border-radius);
   cursor: pointer;
-  display: inline-block;
+  display: flex;
   font-weight: 500;
+  justify-content: center;
   margin: 1rem 0;
   padding: 1rem;
-  text-align: center;
   white-space: nowrap;
 }
 
-.btn .icons {
-  margin-right: 1rem;
+.btn .icon {
+  margin-right: 0.5rem;
 }
 
 @media screen and (min-width: 700px) {
   .btn {
     padding: 2rem 2rem;
-  }
-
-  .btn .icons {
-    margin-right: 1.5rem;
   }
 }
 
@@ -235,16 +231,16 @@ ul {
   .btn {
     padding: 2rem 3rem;
   }
-
-  .btn .icons {
-    margin-right: 2rem;
-  }
 }
 
 .btn--primary {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   color: var(--color-background);
+}
+
+.btn--primary .icon {
+  fill: var(--color-background);
 }
 
 .btn--secondary {
@@ -259,7 +255,7 @@ ul {
 .grid {
   display: grid;
   gap: 1rem;
-  justify-items: center;
+  justify-content: center;
 }
 
 .grid--cols2 {
@@ -271,6 +267,7 @@ ul {
   border-radius: var(--border-radius);
   box-shadow: 0 0 2rem 1rem var(--color-shadows);
   max-width: 520px;
+  margin: 0 auto;
   padding: 1rem 2rem;
   width: 100%;
 }
