@@ -255,12 +255,14 @@ ul {
 /* Grids */
 .grid {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
 }
 
-.grid--cols2 {
-  grid-template-columns: repeat(2, 1fr);
+@media screen and (min-width: 1024px) {
+  .grid--cols2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Cards */
@@ -278,16 +280,11 @@ ul {
 }
 
 .card--grid-cols-2 {
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  /* justify-items: center; */
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @media screen and (min-width: 1024px) {
-  .grid {
-    gap: 2rem;
-  }
-
   .card {
     max-width: 480px;
   }
