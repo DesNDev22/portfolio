@@ -283,9 +283,16 @@ ul {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.card--content-box {
+  display: block;
+}
+
 @media screen and (min-width: 1024px) {
   .card {
     max-width: 460px;
+  }
+  .card--content-box {
+    height: 14rem;
   }
 }
 
