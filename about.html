@@ -55,7 +55,19 @@
       <section class="container new-section">
         <h2>Hi! I'm Luis Carrera</h2>
         <div class="grid grid--cols2">
-          <article>
+          <div class="tab">
+            <button
+              class="tablinks"
+              onclick="openCity(event, 'Tools')"
+              id="defaultOpen"
+            >
+              Tools
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'About')">
+              About
+            </button>
+          </div>
+          <article id="Tools" class="tabcontent">
             <img src="./images/mypicture.png" alt="Author's picture" />
             <h3 class="heading-margin-top">Dev Tools and Frameworks</h3>
             <ul class="list--horizontal">
@@ -85,7 +97,7 @@
             </ul>
           </article>
 
-          <article>
+          <article id="About" class="tabcontent">
             <p>I’m a full stack software engineer and a UX designer</p>
             <p>
               My path has taken me into various industries & roles where I have
