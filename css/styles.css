@@ -2,7 +2,6 @@
   --color-background: #f5f5f5;
   --color-primary: #002266;
   --color-secondary: #4d7fea;
-  --color-line: #1e4bad;
   --color-heading: #112c65;
   --color-body-font: #132e67;
   --color-shadows: #ccc;
@@ -199,6 +198,10 @@ ul {
   }
 }
 
+.image--centered {
+  width: 100%;
+}
+
 /* Lists */
 .list {
   list-style: disc;
@@ -279,6 +282,12 @@ ul {
   }
 }
 
+.info-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 3fr;
+}
+
 /* Cards */
 .card {
   border-radius: var(--border-radius);
@@ -320,35 +329,43 @@ ul {
 
 .collapsible__content {
   max-height: 0;
+  width: 100%;
   overflow: hidden;
   opacity: 0;
   transition: all 0.3s;
 }
 
 .collapsible__icon {
-  transform: rotate(-90deg);
+  transform: rotate(0);
   transition: transform 0.3s;
 }
 
 .collapsible--expanded .collapsible__icon {
-  transform: rotate(0);
+  transform: rotate(-45deg);
 }
 
 .collapsible--expanded .collapsible__content {
-  max-height: 100vh;
+  max-height: 200vh;
   opacity: 1;
 }
 
 /* Tabs component */
 .tab {
-  border-bottom: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-primary);
   display: flex;
   overflow: hidden;
 }
 
+@media screen and (min-width: 1024px) {
+  .tab {
+    display: none;
+  }
+}
+
 .tablinks {
   border-radius: 1rem 1rem 0 0;
-  border: none;
+  border: 1px solid var(--color-primary);
+  border-bottom: none;
   outline: none;
   padding: 1rem 2rem;
   transition: 0.3s;
@@ -357,19 +374,16 @@ ul {
 .tablinks:hover,
 .tablinks:focus {
   background-color: var(--color-secondary);
-  color: white;
+  color: var(--color-background);
 }
 
 .tablinks.active {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-background);
 }
 
 .tabcontent {
   animation: fadeEffect 2s;
-  border-top: none;
-  display: none;
-  padding: 6px 12px;
 }
 
 @keyframes fadeEffect {

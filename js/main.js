@@ -6,7 +6,7 @@ collapsibles.forEach((item) =>
 );
 
 // TODO Refractor code.
-document.getElementById("defaultOpen").click();
+if (screen.width < 1020) document.getElementById("defaultOpen").click();
 
 function openCity(evt, cityName) {
   let i, tabcontent, tablinks;
