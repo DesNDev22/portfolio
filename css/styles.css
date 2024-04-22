@@ -245,12 +245,6 @@ ul {
 
 @media screen and (min-width: 700px) {
   .btn {
-    padding: 2rem 2rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .btn {
     padding: 2rem;
   }
 }
@@ -342,9 +336,28 @@ ul {
   }
 }
 .collapsible__header {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
+}
+
+.collapsible__header .icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .collapsible__header .icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .collapsible__header .icon {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
 }
 
 .collapsible__content {
@@ -504,8 +517,8 @@ ul {
   }
 
   .nav__list-item .icon {
-    width: 1.8rem;
     height: 1.8rem;
+    width: 1.8rem;
   }
 
   .nav__list-item span {
@@ -529,8 +542,8 @@ ul {
   }
 
   .nav__list-item .icon {
-    width: 2.2rem;
     height: 2.2rem;
+    width: 2.2rem;
   }
 
   .nav__list-item span {
