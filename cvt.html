@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luis Carrera - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="block block--primary">
+      <nav class="container nav">
+        <img src="./images/logo.png" alt="logo" class="logo" />
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="index.html" class="nav__list-aRef">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#home"></use>
+              </svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="about.html" class="nav__list-aRef">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#about"></use>
+              </svg>
+              <span>About Me</span>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a
+              href="mailto:luiscarreradesndev@gmail.com?subject=Services%20Inquiry"
+              target="_blank"
+              class="nav__list-aRef"
+            >
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#email"></use>
+              </svg>
+              <span>Contact Me</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="block">
+      <div class="container new-section">
+        <h1>Construction Video Tutorials</h1>
+        <p>
+          With the popularization of DIY shows on TV, there has been a steady
+          growth of users searching for video tutorials for small projects to do
+          around the house.
+        </p>
+        <p>
+          The challenge was to create a responsive website that delivers results
+          by giving all the construction content needed in one place.
+        </p>
+
+        <section class="collapsible collapsible--expanded">
+          <div class="collapsible__header">
+            <h2>Scope</h2>
+            <svg class="icon collapsible__icon">
+              <use xlink:href="./images/sprite.svg#plus"></use>
+            </svg>
+          </div>
+          <div class="grid grid--cols2 collapsible__content">
+            <img
+              src="./images/cvtcasestudy.png"
+              alt=""
+              class="image--centered"
+            />
+            <div class="info info-grid">
+              <span class="emphasize">Duration</span>
+              <span>4 weeks</span>
+              <span class="emphasize">Tools</span>
+              <span>
+                Phone, Video Conferencing, Web Research, Paper Sketches, Mural,
+                Useberry, Adobe XD
+              </span>
+              <span class="emphasize">Roles</span>
+              <span> User Research, Design, Prototyping, Usability Tests </span>
+            </div>
+          </div>
+        </section>
+
+        <section class="collapsible">
+          <div class="collapsible__header">
+            <h2>The Research</h2>
+            <svg class="icon collapsible__icon">
+              <use xlink:href="./images/sprite.svg#plus"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <p>
+              An initial Competitive Audit was launched but did not generate a
+              lot of information about competitors. There are many video
+              streaming websites with just a few related videos, and sites just
+              focused on construction in general.
+            </p>
+            <p>
+              I developed a research plan with a few open questions to reveal
+              user needs, motives, and pain points. There wasn’t a lot of
+              clarity about who the main users would be for this product, except
+              for homeowners in my initial draw. I still included 2 people that
+              didn’t own a home but are working in the construction industry,
+              just to test the value of the concept with a different group.
+            </p>
+            <p>
+              The research confirmed a few assumptions about the pain points,
+              but including the two people outside the main target user, proved
+              to be an impactful move that opened a new proposition value to
+              address not only the research side of remodels but to include a
+              new construction section with training value.
+            </p>
+            <p>
+              From that research, I proceeded to create my personas and empathy
+              maps to understand the user’s journey, and the following pain
+              points and goals became clear.
+            </p>
+
+            <div class="grid grid--cols2">
+              <div>
+                <h3>Pain Points</h3>
+                <ul>
+                  <li>
+                    Having to visit a lot of websites to find the videos waste a
+                    lot of time and causes frustration
+                  </li>
+                  <li>
+                    Results from search are not always related to what they are
+                    looking for, adding to the frustration overall
+                  </li>
+                  <li>
+                    No information as to whether the videos shown are for new
+                    construction or remodeling DYI
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3>Goals</h3>
+                <ul>
+                  <li>
+                    Help the user to find construction tutorial videos in an
+                    assisted way, divided by new construction or remodeling /
+                    improvement projects
+                  </li>
+                  <li>
+                    Let the user save videos to watch later, at their own
+                    leisure
+                  </li>
+                  <li>
+                    Let the user check relevance or quality by a rating system,
+                    helping other users with the decision process
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="collapsible">
+          <div class="collapsible__header">
+            <h2>The Design</h2>
+            <svg class="icon collapsible__icon">
+              <use xlink:href="./images/sprite.svg#plus"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <p>
+              Based on my research, I created a design with simplicity in mind.
+              I made sure not to overwhelm the home screen with too many video
+              suggestions so that users could easily achieve their main goal. To
+              achieve this, I created three different user journeys: two
+              assisted methods by category, one for new construction and another
+              one for remodels/DIY, and a simple search for those that wanted to
+              search for a specific keyword.
+            </p>
+            <p>
+              In my low-fidelity prototype, I added the three main user journeys
+              with a simple layout to avoid overwhelming users with excessive
+              information. I also addressed some of the pain points discovered
+              during the research, and made the user interaction with the site
+              more straightforward. I tested this prototype with eight users,
+              and 93% of them completed their tasks on time. However, some
+              people commented that there were too many choices when exploring
+              new construction.
+            </p>
+            <p>
+              Based on this feedback, I decided to use the same steps for the
+              user journey for new construction and remodel research to simplify
+              the learning curve for new users. The information structure
+              remained the same, so the information architecture didn't change.
+              After finalizing the mockups, I generated the prototype and
+              conducted a second usability test. This time around, 95% of users
+              completed their tasks, but some suggested adding summaries for the
+              videos. This was noted for future releases.
+            </p>
+          </div>
+        </section>
+
+        <section class="collapsible">
+          <div class="collapsible__header">
+            <h2>Wireframes & Mockups</h2>
+            <svg class="icon collapsible__icon">
+              <use xlink:href="./images/sprite.svg#plus"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <div class="grid grid--cols2">
+              <img
+                src="./images/cvt-lofi.png"
+                class="image--centered"
+                alt="Low fidelity prototype"
+              />
+              <img
+                src="./images/cvt-hifi.png"
+                class="image--centered"
+                alt="High fidelity prototype"
+              />
+            </div>
+            <a
+              href="https://xd.adobe.com/view/869ff8f7-4687-4736-baff-c20156b57b13-d3cc/"
+              target="_blank"
+              class="btn btn--primary"
+            >
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#figma"></use>
+              </svg>
+              View Prototype
+            </a>
+          </div>
+        </section>
+
+        <section class="collapsible">
+          <div class="collapsible__header">
+            <h2>Conclusions & Reflections</h2>
+            <svg class="icon collapsible__icon">
+              <use xlink:href="./images/sprite.svg#plus"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <p>
+              One thing I learned was that when you include a user profile in
+              your research that might not be the focus of the design but that
+              in some way is related to your current project can open the scope
+              of the project and increase its reach and user value, and at the
+              same time increase of profit potential for the business.
+            </p>
+            <p>
+              I realized that even though it may not seem like a complex big
+              product to design, the potential for it to grow, simplify user’s
+              experiences, and help make the decisions and assist on normally
+              complex and expensive tasks is enormous.
+            </p>
+            <p>
+              There is no measurement as to the success of this design in the
+              real world, but having validated the simplicity of the user
+              journeys and reflected on the benefits of having the one
+              repository that’s missing in the real world, I consider this one
+              in the success column.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="block block--primary">
+      <nav class="container nav">
+        <span class="copyright"
+          >Copyright &copy Luis Carrera. All rights reserved</span
+        >
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a
+              href="mailto:luiscarreradesndev@gmail.com?subject=Services%20Inquiry"
+              target="_blank"
+              class="nav__list-aRef"
+            >
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#email"></use>
+              </svg>
+              <span>Email</span>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a
+              href="https://www.linkedin.com/in/jluiscarrerag"
+              target="_blank"
+              class="nav__list-aRef"
+            >
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#linkedin"></use>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a
+              href="https://www.twitter.com/DesNDev2022"
+              target="_blank"
+              class="nav__list-aRef"
+            >
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#x-twitter"></use>
+              </svg>
+              <span>X-Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
