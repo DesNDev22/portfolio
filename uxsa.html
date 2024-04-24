@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="block block--primary">
@@ -75,7 +76,11 @@
               <use xlink:href="./images/sprite.svg#plus"></use>
             </svg>
           </div>
-          <div class="grid grid--cols2 collapsible__content">
+          <div
+            class="grid grid--cols2 collapsible__content"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <img
               src="./images/uxsacasestudy.png"
               alt=""
@@ -305,5 +310,9 @@
     </footer>
 
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

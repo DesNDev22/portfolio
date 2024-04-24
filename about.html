@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -68,7 +69,12 @@
             </button>
           </div>
           <article id="Tools" class="tabcontent">
-            <img src="./images/mypicture.png" alt="Author's picture" />
+            <img
+              src="./images/mypicture.png"
+              data-aos="fade-down-right"
+              data-aos-duration="1000"
+              alt="Author's picture"
+            />
             <h3 class="heading-margin-top">Dev Tools and Frameworks</h3>
             <ul class="list--horizontal">
               <li class="list--horizontal-item">HTML</li>
@@ -164,5 +170,9 @@
     </footer>
 
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

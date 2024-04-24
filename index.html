@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="block block--primary">
@@ -67,7 +68,7 @@
       <div class="container new-section">
         <h2 class="divider-line">Dev Projects</h2>
         <section class="grid grid--cols2">
-          <article class="card">
+          <article class="card" data-aos="fade-right" data-aos-duration="1000">
             <h3>My Own Portfolio</h3>
             <p class="card--content-box">
               A sleek and modern portfolio website showcasing my skills,
@@ -106,7 +107,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card" data-aos="fade-left" data-aos-duration="1000">
             <h3>Supreme Solutions</h3>
             <p class="card--content-box">
               An easy to navigate website for a Repair Auto Shop business that
@@ -154,7 +155,11 @@
       <div class="container new-section">
         <h2 class="divider-line">Design Projects</h2>
         <section class="grid grid--cols2">
-          <article class="card">
+          <article
+            class="card"
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+          >
             <h3>UXSA Volunteer Page</h3>
             <p class="card--content-box">
               A user-centered redesign of the volunteering page to improve the
@@ -193,7 +198,11 @@
             </div>
           </article>
 
-          <article class="card">
+          <article
+            class="card"
+            data-aos="fade-up-left"
+            data-aos-duration="1000"
+          >
             <h3>Construction Video Tutorials</h3>
             <p class="card--content-box">
               A user-friendly construction tutorial website with easy
@@ -278,5 +287,9 @@
     </footer>
 
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
