@@ -208,14 +208,14 @@ ul {
   padding-left: 1.5rem;
 }
 
-.list--horizontal {
+.list__horizontal {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.list--horizontal-item {
+.list__horizontal-item {
   flex-basis: content;
   margin-right: 3rem;
 }
