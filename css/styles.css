@@ -556,16 +556,7 @@ ul {
 }
 
 .mypicture {
-  height: 0;
-  width: 0;
-  opacity: 0;
-  transition: all ease-in-out 1s;
-}
-
-.mypicture.grow {
-  height: auto;
   width: 100%;
-  opacity: 1;
 }
 
 .emphasize {

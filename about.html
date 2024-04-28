@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -58,22 +58,12 @@
       <section class="container new-section">
         <h2>Hi! I'm Luis Carrera</h2>
         <div class="grid grid--cols2">
-          <!-- <div class="tab">
-            <button
-              class="tablinks"
-              onclick="openTab(event, 'Tools')"
-              id="defaultOpen"
-            >
-              Tools
-            </button>
-            <button class="tablinks" onclick="openTab(event, 'About')">
-              About
-            </button>
-          </div> -->
           <div id="Tools" class="tabcontent">
             <img
               src="./images/mypicture.png"
-              class="mypicture grow"
+              class="mypicture"
+              data-aos="fade-down"
+              data-aos-duration="1000"
               alt="Author's picture"
             />
             <h3 class="heading-margin-top">Dev Tools and Frameworks</h3>
@@ -83,18 +73,13 @@
               <li class="list__horizontal-item">JavaScript</li>
               <li class="list__horizontal-item">REACT</li>
               <li class="list__horizontal-item">Node.JS</li>
-              <!-- <li class="list__horizontal-item">Express.JS</li> -->
               <li class="list__horizontal-item">MongoDB</li>
               <li class="list__horizontal-item">SQL Server</li>
-              <!-- <li class="list__horizontal-item">Visual Basic</li>
-              <li class="list__horizontal-item">COBOL</li> -->
             </ul>
             <h3 class="heading-margin-top">UX Tools and Skills</h3>
             <ul class="list__horizontal">
               <li class="list__horizontal-item">Figma</li>
               <li class="list__horizontal-item">Adobe XD</li>
-              <!-- <li class="list__horizontal-item">Mural</li>
-              <li class="list__horizontal-item">Canva</li> -->
               <li class="list__horizontal-item">Research</li>
               <li class="list__horizontal-item">Content</li>
               <li class="list__horizontal-item">Information Architecture</li>
@@ -170,10 +155,10 @@
       </nav>
     </footer>
 
-    <script src="./js/tabs.js"></script>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="./js/tabs.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script> -->
+    </script>
   </body>
 </html>
