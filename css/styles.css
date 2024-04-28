@@ -392,7 +392,7 @@ ul {
   overflow: hidden;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1020px) {
   .tab {
     display: none;
   }
@@ -553,6 +553,19 @@ ul {
   .copyright {
     font-size: 1.5rem;
   }
+}
+
+.mypicture {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  transition: all ease-in-out 1s;
+}
+
+.mypicture.grow {
+  height: auto;
+  width: 100%;
+  opacity: 1;
 }
 
 .emphasize {
